@@ -1,10 +1,9 @@
-﻿using System;
-using DungeonGenerator.Dungeon;
+﻿using DungeonGenerator.Dungeon;
 using RotMG.Common;
 
-namespace DungeonGenerator.Templates.Arena
+namespace DungeonGenerator.Templates.DeathArena
 {
-    class ArenaTemplate : DungeonTemplate
+    class DeathArenaTemplate : DungeonTemplate
     {
         internal static readonly TileType LightSand = new TileType(0x00bd, "Light Sand");
         internal static readonly TileType DarkSand = new TileType(0x00be, "Dark Sand");

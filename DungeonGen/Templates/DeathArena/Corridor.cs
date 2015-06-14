@@ -2,7 +2,7 @@
 using RotMG.Common;
 using RotMG.Common.Rasterizer;
 
-namespace DungeonGenerator.Templates.Arena
+namespace DungeonGenerator.Templates.DeathArena
 {
     internal class Corridor : MapCorridor
     {
@@ -11,11 +11,11 @@ namespace DungeonGenerator.Templates.Arena
             var buf = Rasterizer.Bitmap;
             var lightSand = new DungeonTile
             {
-                TileType = ArenaTemplate.LightSand
+                TileType = DeathArenaTemplate.LightSand
             };
             var shallowWater = new DungeonTile
             {
-                TileType = ArenaTemplate.ShallowWater
+                TileType = DeathArenaTemplate.ShallowWater
             };
 
             Rect rect;

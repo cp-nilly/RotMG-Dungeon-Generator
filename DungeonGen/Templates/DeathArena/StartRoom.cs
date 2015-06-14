@@ -2,7 +2,7 @@
 using DungeonGenerator.Dungeon;
 using RotMG.Common.Rasterizer;
 
-namespace DungeonGenerator.Templates.Arena
+namespace DungeonGenerator.Templates.DeathArena
 {
     class StartRoom : Room
     {
@@ -23,11 +23,11 @@ namespace DungeonGenerator.Templates.Arena
         {
             var lightSand = new DungeonTile
             {
-                TileType = ArenaTemplate.LightSand
+                TileType = DeathArenaTemplate.LightSand
             };
             var darkSand = new DungeonTile
             {
-                TileType = ArenaTemplate.LightSand
+                TileType = DeathArenaTemplate.LightSand
             };
 
             var cX = Pos.X + _radius + 0.5;
@@ -56,7 +56,7 @@ namespace DungeonGenerator.Templates.Arena
                         {
                             buf[x, y].Object = new DungeonObject
                             {
-                                ObjectType = ArenaTemplate.PalmTree
+                                ObjectType = DeathArenaTemplate.PalmTree
                             };
                         }
                     }

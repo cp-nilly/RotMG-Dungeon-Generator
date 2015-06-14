@@ -1,9 +1,8 @@
 ﻿using System;
 using DungeonGenerator.Dungeon;
-using DungeonGenerator.Templates.PirateCave;
 using RotMG.Common.Rasterizer;
 
-namespace DungeonGenerator.Templates.Arena
+namespace DungeonGenerator.Templates.DeathArena
 {
 	internal class BossRoom : Room {
 		readonly int _radius;
@@ -20,7 +19,7 @@ namespace DungeonGenerator.Templates.Arena
 
 		public override void Rasterize(BitmapRasterizer<DungeonTile> rasterizer, Random rand) {
 			var tile = new DungeonTile {
-				TileType = ArenaTemplate.LightSand
+				TileType = DeathArenaTemplate.LightSand
 			};
 
 			var cX = Pos.X + _radius + 0.5;

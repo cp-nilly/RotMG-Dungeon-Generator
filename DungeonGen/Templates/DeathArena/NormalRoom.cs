@@ -2,7 +2,7 @@
 using DungeonGenerator.Dungeon;
 using RotMG.Common.Rasterizer;
 
-namespace DungeonGenerator.Templates.Arena
+namespace DungeonGenerator.Templates.DeathArena
 {
 	internal class NormalRoom : Room {
 		readonly int _w;
@@ -21,7 +21,7 @@ namespace DungeonGenerator.Templates.Arena
 
 		public override void Rasterize(BitmapRasterizer<DungeonTile> rasterizer, Random rand) {
 			rasterizer.FillRect(Bounds, new DungeonTile {
-				TileType = ArenaTemplate.LightSand
+				TileType = DeathArenaTemplate.LightSand
 			});
 		}
 	}
